@@ -1,0 +1,18 @@
+2022-04-28T01:24:34+00:00 CRITICAL Uncaught Exception: Google account is not connected. in D:\XAMPP\htdocs\alifbata\wp-content\plugins\google-listings-and-ads\src\MerchantCenter\MerchantStatuses.php:172
+Stack trace:
+#0 D:\XAMPP\htdocs\alifbata\wp-content\plugins\google-listings-and-ads\src\MerchantCenter\MerchantStatuses.php(139): Automattic\WooCommerce\GoogleListingsAndAds\MerchantCenter\MerchantStatuses->maybe_refresh_status_data(false)
+#1 D:\XAMPP\htdocs\alifbata\wp-content\plugins\google-listings-and-ads\src\MerchantCenter\MerchantCenterService.php(358): Automattic\WooCommerce\GoogleListingsAndAds\MerchantCenter\MerchantStatuses->get_issues('account')
+#2 D:\XAMPP\htdocs\alifbata\wp-content\plugins\google-listings-and-ads\src\Tracking\TrackerSnapshot.php(98): Automattic\WooCommerce\GoogleListingsAndAds\MerchantCenter\MerchantCenterService->has_account_issues()
+#3 D:\XAMPP\htdocs\alifbata\wp-content\plugins\google-listings-and-ads\src\Tracking\TrackerSnapshot.php(67): Automattic\WooCommerce\GoogleListingsAndAds\Tracking\TrackerSnapshot->get_settings()
+#4 D:\XAMPP\htdocs\alifbata\wp-content\plugins\google-listings-and-ads\src\Tracking\TrackerSnapshot.php(49): Automattic\WooCommerce\GoogleListingsAndAds\Tracking\TrackerSnapshot->include_snapshot_data(Array)
+#5 D:\XAMPP\htdocs\alifbata\wp-includes\class-wp-hook.php(307): Automattic\WooCommerce\GoogleListingsAndAds\Tracking\TrackerSnapshot->Automattic\WooCommerce\GoogleListingsAndAds\Tracking\{closure}(Array)
+#6 D:\XAMPP\htdocs\alifbata\wp-includes\plugin.php(189): WP_Hook->apply_filters(Array, Array)
+#7 D:\XAMPP\htdocs\alifbata\wp-content\plugins\woocommerce\includes\class-wc-tracker.php(175): apply_filters('woocommerce_tra...', Array)
+#8 D:\XAMPP\htdocs\alifbata\wp-content\plugins\woocommerce\includes\class-wc-tracker.php(64): WC_Tracker::get_tracking_data()
+#9 D:\XAMPP\htdocs\alifbata\wp-includes\class-wp-hook.php(307): WC_Tracker::send_tracking_data()
+#10 D:\XAMPP\htdocs\alifbata\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#11 D:\XAMPP\htdocs\alifbata\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#12 D:\XAMPP\htdocs\alifbata\wp-cron.php(138): do_action_ref_array('woocommerce_tra...', Array)
+#13 {main}
+  thrown di D:\XAMPP\htdocs\alifbata\wp-content\plugins\google-listings-and-ads\src\MerchantCenter\MerchantStatuses.php pada baris 172
+
